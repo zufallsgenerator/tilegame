@@ -1,0 +1,80 @@
+body {
+  background-color: #ccc;
+}
+
+.score {
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  font-family: arial, verdana;
+  font-weight: bolder;
+  width: 320px;
+  height: 70px;
+  padding: 10px;
+  background: white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  color: blue;    
+}
+
+div#instructions {
+  position: absolute;
+  left: 450px;
+  top: 120px;
+  font-family: arial, verdana;
+  font-weight: bolder;
+  width: 270px;
+  height: 220px;
+  padding: 10px;
+  background: white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  color: black;    
+}
+
+div#instructions span {
+  margin: 10px;
+  display: block;
+}
+
+.blocksize {
+  width: 50px;
+  height: 50px;
+}
+
+
+.gamefield {
+  position: absolute;
+  background-image: url(graphic/background.png);
+  background-repeat: no-repeat;
+  top: 120px;
+  left: 100px;
+  width: 340px;
+  height: 240px;
+}
+
+.gamefield div {
+  margin-left: 20px;
+  margin-top: 20px;
+  background-image: url(graphic/board300x200.png);
+}
+
+.movefailed {
+  background: red ! important;
+}
+
+.grabbed {
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  margin-left: 16px ! important;
+  margin-top: 16px ! important;
+  z-index: 100;
+} 
+
+.selected {
+  margin-left: 18px ! important;
+  margin-top: 18px ! important;
+  border: 2px solid blue;
+}
